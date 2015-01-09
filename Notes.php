@@ -60,8 +60,33 @@
     	$nachos1->meat = "beef";
     	$nachos1->price ="$5-$10";
 
+    	
+    	if (is_string(‘hello’))
+		echo “It is a string”;
+		else
+        echo ‘It is not a string’;
+		var_dump(is_string(‘XYZ’));
+		var_dump(is_string(‘8008’));
+		var_dump(is_string(123));
+		var_dump(is_string(false));
 
 
-   
+		if (is_string(‘bye’))
+		echo “It is a string”;
+		else
+		echo ‘It is not a string’;
+		var_dump(is_string(123));
+		var_dump(is_string(false));
 
+
+		if (is_string(‘soccer’))
+		echo “It is a string”;
+		else
+		echo ‘It is not a string’;
+	    var_dump(is_string(‘XYZ’));
+        var_dump(is_string(‘8008’));
+		var_dump(is_string(123));
+		var_dump(is_string(false));
 ?> 
+
+
