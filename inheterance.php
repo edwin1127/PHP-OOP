@@ -7,39 +7,23 @@
 		public $ball;
 		public $number;
 		public $nationality;
-
-	function __construct($cleats, $shinguards, $brand, $size, $ball, $number, $nationality) {
-			$this­>cleatsName = $cleats;
-			$this­>shinguardsName = $shinguards;
-			$this­>brandName = $brand;
-			$this­>sizeName = $size;
-			$this­>ballName = $ball;
-			$this­>numberName = $number;
-			$this­>nationalityName = $nationality;
+		
+	function __construct($cleats, $shinguards, $brand, $size, $ball, $number, $nationality)
+	{
+			$this->cleatsName = $cleats;
+			$this->shinguardsName = $shinguards;
+			$this->sizeName = $size;
+			$this->ballName = $ball;
+			$this->numberName = $number;
+			$this->nationalityName = $nationality;
 	}
 
-	function getName() {
-	return "Im from " . $this­>nationalityName;
-    " and im number 16 " . $this­>lastName;
+	function getName()
+	 {
+		return "Im from" . $this->nationalityName . "<br />" . 
+		" and im number 16" . $this->numberName;
 	}
 }
-	class soccer extends Sports {
-		function greet() {
-		return $this­>shoot;
-	    }
 
-	class shoes extends Soccer {
-		function greet() {
-		return $this­>cleats;
-	    }
-
-	class club extends fifa{
-		function greet() {
-		return $this­>barcelona;
-	    }
-
-
-
-
-
-
+	$messi = new Soccer("nike", "adidas", "lotto", 9, "f-50", 16, "Argentina");
+	echo $messi->getName(); 
